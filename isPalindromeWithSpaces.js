@@ -27,3 +27,39 @@ function isPalindromeWithSpaces(string){
     }
     // If we made it all the way through, it must be a palindrome
     return true;
+}
+
+/* Mini walkthrough!!
+t ac  ocat
+i        j
+ are either of these characters spaces? -> no
+ are they NOT the same? -> no, they ARE the same, so lets move them in one each
+
+t ac  ocat
+ i      j
+  are either of these characters spaces? -> yes! i is at a space. so we increment i, and leave j
+
+t ac  ocat
+  i     j
+   are either of these characters spaces? -> no
+   are they NOT the same? -> no, they ARE the same, so let's move them in one each
+
+t ac  ocat
+   i   j
+    are either of these characters spaces? -> no
+    are they NOT the same? -> no, they ARE the same, so let's move them in one each
+
+t ac  ocat
+    i j
+     are either of these characters spaces? -> yes! i is at a space, so we increment i and leave j
+
+t ac  ocat
+     ij
+      are either of these characters spaces? -> yes! i is at a space, so we increment i and leave j
+
+t ac  ocat
+      i
+      j
+      i is at the same spot as j, so break out of the while loop
+it's a palindrome!!
+-- end walkthrough */
